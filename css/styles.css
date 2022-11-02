@@ -121,6 +121,7 @@ img {
   padding: 32px 0;
   display: block;
   transition: color var(--transition-param);
+  position: relative;
 }
 
 .header-link:hover,
@@ -130,6 +131,17 @@ img {
 
 .current {
   color: var(--gray-blue);
+}
+
+.header-link.current:after {
+  content: "";
+  position: absolute;
+  bottom:-1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gray-blue);
+  border-radius: 2px;
 }
 
 .header-adress {
