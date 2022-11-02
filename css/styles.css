@@ -31,6 +31,7 @@ body {
   --transition-param: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --back-portfolio-img-text: rgba(33, 150, 243, 0.9);
   --backdrop-color: rgba(0, 0, 0, 0.2);
+  --what-we-do-boz: rgba(47, 48, 58, 0.8);
 }
 
 p,
@@ -136,12 +137,13 @@ img {
 .header-link.current:after {
   content: "";
   position: absolute;
-  bottom:-1px;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
   background: var(--gray-blue);
   border-radius: 2px;
+  display: block;
 }
 
 .header-adress {
@@ -337,6 +339,27 @@ img {
 
 .what-we-do-icon {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.what-we-do-overtext {
+  position: relative;
+  overflow: hidden;
+}
+
+.what-we-do-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--gray-white);
+  background-color: var(--what-we-do-boz);
+  padding: 27px 0;
 }
 
 /*!!!!!!!!!!!!!SECTION-4!!!!!!!!! */
