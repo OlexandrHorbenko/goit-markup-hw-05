@@ -700,7 +700,8 @@ img {
   background-color: var(--backdrop-color);
   position: fixed;
   top: 0;
-  transition: opacity var(--transition-param), visibility var(--transition-param);
+  transition: opacity var(--transition-param),
+    visibility var(--transition-param);
 }
 
 .modal {
