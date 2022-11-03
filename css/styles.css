@@ -161,7 +161,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color var(--transition-param), fill var(--transition-param);
+  transition: color var(--transition-param);
 }
 
 .header-tel:hover,
@@ -169,14 +169,14 @@ img {
   color: var(--gray-blue);
 }
 
-.header-tel:hover .tel-icon,
+/* .header-tel:hover .tel-icon,
 .header-tel:focus .tel-icon {
-  fill: var(--gray-blue);
-}
+  fill: currentColor;
+} */
 
 .tel-icon {
   margin-right: 10px;
-  fill: var(--maine_color);
+  fill: currentColor;
 }
 
 .header-mail {
@@ -189,7 +189,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color var(--transition-param), fill var(--transition-param);
+  transition: color var(--transition-param);
 }
 
 .header-mail:hover,
@@ -199,13 +199,13 @@ img {
 
 .mail-icon {
   margin-right: 10px;
-  fill: var(--maine_color);
+  fill: currentColor;
 }
 
-.header-mail:hover .mail-icon,
+/* .header-mail:hover .mail-icon,
 .header-mail:focus .mail-icon {
-  fill: var(--gray-blue);
-}
+  fill: currentColor;
+} */
 
 /* !!!!!!!!!!!!!MAIN!!!!!!!!!!!!!!! */
 /*!!!!!!!!!!! SECTION-1!!!!!!!!!! */
@@ -432,12 +432,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color var(--transition-param),
-    fill var(--transition-param);
+  transition: background-color var(--transition-param);
 }
 
 .team-soc-icon {
   fill: var(--border-color);
+  transition: fill var(--transition-param);
 }
 
 .team-soc-link:hover,
